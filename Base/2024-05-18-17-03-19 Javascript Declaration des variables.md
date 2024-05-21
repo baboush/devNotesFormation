@@ -3,7 +3,7 @@ title: Declaration des Variable
 tags: ["Javascript", "Typescript", "Variables", "Developpement", "Fondamentaux"]
 ---
 
-# 2024-05-18-17-03-19 Declaration des Variable
+# 2024-05-18-17-03-19 Declaration des Variables
 
 ## let - var - const
 

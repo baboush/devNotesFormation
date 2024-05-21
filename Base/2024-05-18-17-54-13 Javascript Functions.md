@@ -42,7 +42,6 @@ function Sum(a, b) {
 }
 ```
 
-One shot. C'est une fonction qui s'execute a un moment specifique.
 
 ```js
 const sum = function (a, b) {
@@ -50,7 +49,6 @@ const sum = function (a, b) {
 }; // C'est une fonction anonyme
 ```
 
-Le comportement des fonctions different selon le type de fonction.
 
 ```js
 const sum = function (a, b) {
@@ -62,23 +60,11 @@ function subStract(a, b) {
 } // fonction nomee
 
 if (true) {
-  sum(1, 3); // affiche 3
-  subStract(4, 2); // affiche rien du tout
+  sum(1, 3); // affiche rien du tout
+  subStract(4, 2); // affiche 2
 }
 ```
 
-Le scope de la fonction est important, dans l'exemple au dessus nous avons quatre **scopes**.
 
-- Le scope de la fonction anonyme **sum()**
-- Le scope de la fonction nomee **subStract()**
-- Le scope de la condition **if**
-- Le scope **global** du fichier
 
-La longueur d'un **scope** se definit par ses **accolades** **{}**
 
-Le mot cle **function** declare un fonction dans **TOUT LE PERIMETRE DU CONTEXT GLOBAL**
-consequence dans le **context enfant** la function **subStract()** existe.
-
-La fonction anonyme **const sum = ()** existe **UNIQUEMENT DANS LE CONTEXT GLOBAL**
-Consequence dans le **scope** du context enfant **if** la fonction annonyme n'existe pas,
-ce ne sont pas les memes fonction.
